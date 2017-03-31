@@ -140,10 +140,8 @@ $('.home.index').ready(function() {
     if($('.navbar').width() > 767) {
       // Add zoom containers to DOM
       zoom_active = true;
-      addZoom("#zoom_img_le");
-      addZoom("#zoom_img_lw");
-      addZoom("#zoom_img_re");
-      addZoom("#zoom_img_rw");
+      addZoom("#zoom_img_l");
+      addZoom("#zoom_img_r");
     }  
   };
 
