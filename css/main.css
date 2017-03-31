@@ -379,7 +379,13 @@ a {
     }
 }
 
-#drop-container_w, #drop-container_e {
+#drop-container_lc, #drop-container_rc {
+    width: 220px;
+    margin: 10px auto;
+    z-index: 1000 !important;
+}
+
+#drop-container_lw, #drop-container_le, #drop-container_rw, #drop-container_re  {
     width: 220px;
     margin: 10px auto;
     z-index: 1000 !important;

@@ -261,40 +261,123 @@
     <div class="container" id="projects">
       <h2 class="text-centered">NBA Paths to the Playoffs</h2>
       <h3></h3>
-      <p>Beneath is my personal project work to create a visualization that charts the progression of an NBA team's season. Each graph charts the win-loss path of a team and uses the background to provide a comparison to past seasons as well as historical playoff probabilities.  The graphs below therefore represent a mixture of both historical and current NBA season data.  The major components are the background, the highlighted paths and the color gradients.<br><br><p class="tab"><i><b>Background:</i></b>  The underlying values of the backdrop come from a matrix of the historical probability that an NBA team made the playoffs, given that the team had y wins and x losses.  Each number inside each box indicates this exact probability.  The data were collected from basketball-reference.com for the 1978/79 season (the year of the NBA/ABA merger) through the 2015/16 season.<br><br><i><b>Paths:</i></b>  As a layer on top of these historical probabilities, there is a highlighted path which shows the current progress of a team moving through the 82 game season.  At a glance, teams that rise to the top left quadrant have true championship hopes, whereas teams stuck in the bottom right are simply waiting for the next LeBron.<br><br><i><b>Color Gradients:</i></b>  Every background color gradient comes from the corresponding team's colors.  The top left color represents a 100% historical probability of making the playoffs given the team's record, the middle color represents a 50% historical probability and the bottom right color represents a 0% historical probability.  Every path color gradient uses the same historical probabilities as its base values and uses the simple green = 100%, yellow = 50%, red = 0% spectrum, while shading the in-between values appropriately.
+      <p>Beneath is my personal project work to create a visualization that charts the progression of an NBA team's season. Each graph charts the win-loss path of a team and uses the background to provide a comparison to past seasons as well as historical playoff probabilities.  The graphs below therefore represent a mixture of both historical and current NBA season data.  The major components are the background, the highlighted paths and the color gradients.<br><br><p class="tab"><i><b>Background:</i></b>  The underlying values of the backdrop come from a matrix of the historical probability that an NBA team made the playoffs, given that the team had y wins and x losses.  Each number inside each box indicates this exact probability.  The data were collected from basketball-reference.com for the 1978/79 season (the year of the NBA/ABA merger) through the 2016/17 season.<br><br><i><b>Paths:</i></b>  As a layer on top of these historical probabilities, there is a highlighted path which shows the current progress of a team moving through the 82 game season.  At a glance, teams that rise to the top left quadrant have true championship hopes, whereas teams stuck in the bottom right are simply waiting for the next LeBron.<br><br><i><b>Color Gradients:</i></b>  Every background color gradient comes from the corresponding team's colors.  The top left color represents a 100% historical probability of making the playoffs given the team's record, the middle color represents a 50% historical probability and the bottom right color represents a 0% historical probability.  Every path color gradient uses the same historical probabilities as its base values and uses the simple green = 100%, yellow = 50%, red = 0% spectrum, while shading the in-between values appropriately.
       <div class="push-small"></div>
       <div class="row">
         <div class="col-lg-6">
           <div class="team-img-container">
-            <h3 class="text-centered">Eastern Conference</h3>
-            <div id="drop-container_e">
-              <select id="drop_e">
-                <option selected value="Toronto Raptors">Toronto Raptors</option>
-                <option value="Boston Celtics">Boston Celtics</option>
-                <option value="Brooklyn Nets">Brooklyn Nets</option>
-                <option value="Philadelphia 76ers">Philadelphia 76ers</option>
-                <option value="New York Knicks">New York Knicks</option>
-
-                <option value="">Cleveland Cavaliers</option>
-                <option value="Chicago Bulls">Chicago Bulls</option>
-                <option value="Milwaukee Bucks">Milwaukee Bucks</option>
-                <option value="Indiana Pacers">Indiana Pacers</option>
-                <option value="Detroit Pistons">Detroit Pistons</option>
-
-                <option value="Atlanta Hawks">Atlanta Hawks</option>
-                <option value="Washington Wizards">Washington Wizards</option>
-                <option value="Miami Heat">Miami Heat</option>
-                <option value="Charlotte Hornets">Charlotte Hornets</option>
-                <option value="Orlando Magic">Orlando Magic</option>
+            <div id="drop-container_lc">
+              <select id="drop_lc" data-live-search="true">
+                  <option value="Western Conference">Western Conference</option>
+                  <option selected value="Eastern Conference">Eastern Conference</option>
               </select>
             </div>
-            <div id="container_e">
-              <img src="images/Toronto Raptors.png" class="zoom" id="zoom_img_e"/>
+            <div id="container_lc">
+              <div id="drop-container_le" style="display: block";>
+                  <select id="drop_le" data-live-search="true">
+                    <option value="Toronto Raptors">Toronto Raptors</option>
+                    <option value="Boston Celtics">Boston Celtics</option>
+                    <option value="Brooklyn Nets">Brooklyn Nets</option>
+                    <option value="Philadelphia 76ers">Philadelphia 76ers</option>
+                    <option value="New York Knicks">New York Knicks</option>
+
+                    <option selected value="Cleveland Cavaliers">Cleveland Cavaliers</option>
+                    <option value="Chicago Bulls">Chicago Bulls</option>
+                    <option value="Milwaukee Bucks">Milwaukee Bucks</option>
+                    <option value="Indiana Pacers">Indiana Pacers</option>
+                    <option value="Detroit Pistons">Detroit Pistons</option>
+
+                    <option value="Atlanta Hawks">Atlanta Hawks</option>
+                    <option value="Washington Wizards">Washington Wizards</option>
+                    <option value="Miami Heat">Miami Heat</option>
+                    <option value="Charlotte Hornets">Charlotte Hornets</option>
+                    <option value="Orlando Magic">Orlando Magic</option>
+                  </select>
+              </div> 
+              <div id="drop-container_lw" style="display: none";>
+                  <select id="drop_lw" data-live-search="true">
+                    <option selected value="Dallas Mavericks">Dallas Mavericks</option>
+                    <option value="Houston Rockets">Houston Rockets</option>
+                    <option value="Memphis Grizzlies">Memphis Grizzlies</option>
+                    <option value="San Antonio Spurs">San Antonio Spurs</option>
+                    <option value="New Orleans Pelicans">New Orleans Pelicans</option>
+
+                    <option value="Portland Trail Blazers">Portland Trail Blazers</option>
+                    <option value="Oklahoma City Thunder">Oklahoma City Thunder</option>
+                    <option value="Utah Jazz">Utah Jazz</option>
+                    <option value="Denver Nuggets">Denver Nuggets</option>
+                    <option value="Minnesota Timberwolves">Minnesota Timberwolves</option>
+
+                    <option value="Golden State Warriors">Golden State Warriors</option>
+                    <option value="Los Angeles Clippers">Los Angeles Clippers</option>
+                    <option value="Los Angeles Lakers">Los Angeles Lakers</option>
+                    <option value="Phoenix Suns">Phoenix Suns</option>
+                    <option value="Sacramento Kings">Sacramento Kings</option>
+                  </select>
+              </div>  
+              <img src="images/Cleveland Cavaliers.png" class="zoom" id="zoom_img_l"/>
             </div>
-          </div>
+          </div>  
         </div>
 
+
         <div class="col-lg-6">
+          <div class="team-img-container">
+            <div id="drop-container_rc">
+              <select id="drop_rc" data-live-search="true">
+                  <option value="Western Conference">Western Conference</option>
+                  <option selected value="Eastern Conference">Eastern Conference</option>
+              </select>
+            </div>
+            <div id="container_rc">
+              <div id="drop-container_re" style="display: block";>
+                  <select id="drop_re" data-live-search="true">
+                    <option value="Toronto Raptors">Toronto Raptors</option>
+                    <option value="Boston Celtics">Boston Celtics</option>
+                    <option value="Brooklyn Nets">Brooklyn Nets</option>
+                    <option value="Philadelphia 76ers">Philadelphia 76ers</option>
+                    <option value="New York Knicks">New York Knicks</option>
+
+                    <option selected value="Cleveland Cavaliers">Cleveland Cavaliers</option>
+                    <option value="Chicago Bulls">Chicago Bulls</option>
+                    <option value="Milwaukee Bucks">Milwaukee Bucks</option>
+                    <option value="Indiana Pacers">Indiana Pacers</option>
+                    <option value="Detroit Pistons">Detroit Pistons</option>
+
+                    <option value="Atlanta Hawks">Atlanta Hawks</option>
+                    <option value="Washington Wizards">Washington Wizards</option>
+                    <option value="Miami Heat">Miami Heat</option>
+                    <option value="Charlotte Hornets">Charlotte Hornets</option>
+                    <option value="Orlando Magic">Orlando Magic</option>
+                  </select>
+              </div> 
+              <div id="drop-container_rw" style="display: none";>
+                  <select id="drop_rw" data-live-search="true">
+                    <option selected value="Dallas Mavericks">Dallas Mavericks</option>
+                    <option value="Houston Rockets">Houston Rockets</option>
+                    <option value="Memphis Grizzlies">Memphis Grizzlies</option>
+                    <option value="San Antonio Spurs">San Antonio Spurs</option>
+                    <option value="New Orleans Pelicans">New Orleans Pelicans</option>
+
+                    <option value="Portland Trail Blazers">Portland Trail Blazers</option>
+                    <option value="Oklahoma City Thunder">Oklahoma City Thunder</option>
+                    <option value="Utah Jazz">Utah Jazz</option>
+                    <option value="Denver Nuggets">Denver Nuggets</option>
+                    <option value="Minnesota Timberwolves">Minnesota Timberwolves</option>
+
+                    <option value="Golden State Warriors">Golden State Warriors</option>
+                    <option value="Los Angeles Clippers">Los Angeles Clippers</option>
+                    <option value="Los Angeles Lakers">Los Angeles Lakers</option>
+                    <option value="Phoenix Suns">Phoenix Suns</option>
+                    <option value="Sacramento Kings">Sacramento Kings</option>
+                  </select>
+              </div>  
+              <img src="images/Cleveland Cavaliers.png" class="zoom" id="zoom_img_r"/>
+            </div>
+          </div>  
+        </div>
+
+        <!-- <div class="col-lg-6">
           <div class="team-img-container">
             <h3 class="text-centered">Western Conference</h3>
             <div id="drop-container_w">
@@ -319,10 +402,10 @@
                 </select>
             </div>
             <div id="container_w">
-              <img src="images/Dallas Mavericks.png" class="zoom" id="zoom_img_w"/>
+              <img src="images/Dallas Mavericks.png" class="zoom" id="zoom_img_r"/>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       </p><br>Future directions of this data visualization project include a few of the following ideas: <br><br><p class="tab"><b>(i)</b> Build underlying predictive models to visualize the likely potential paths of a team toward the playoffs <br><b>(ii)</b> Incorporate all previous seasons to view how teams from the past made it into the playoffs <br><b>(iii)</b> Make the graph both live in d3 and interactive</p>
     </div> <!-- End of Project I section -->
