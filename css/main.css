@@ -120,7 +120,7 @@ body {
     padding: 0px;
 }
 
-@media(min-width: 767px) {
+@media(min-width: 1200px) {
     .top-nav-collapse #toggle-target .menu-tab, .menu-tab-last {
         display: inline;    
     }
@@ -183,12 +183,12 @@ body {
 }
 
 #toggle-target .menu-tab, .menu-tab-last {
-    min-width: 125px;
+    min-width: 80px;
     margin: 0px -1px;
     display: none;
     padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 4px;
 }
 
@@ -214,7 +214,7 @@ body {
     background-color: transparent; 
 }
 
-@media(max-width: 767px) {
+@media(max-width: 1200px) {
     .navbar-header {
         background-color: #e0e0e0 !important;
     }
