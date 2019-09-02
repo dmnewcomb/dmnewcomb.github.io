@@ -104,12 +104,6 @@
                   Coursework
                 </a>
               </li>
-
-              <li class="menu-tab-last">
-                <a href="#contact" class="active-a page-scroll">
-                  Contact
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -117,115 +111,70 @@
     </header>
 
     <!-- Main section -->
-    <img class="top_background_image background_image bg_leaf" id="top"/>
+    <img class="background_image bg_caribe"/>
 
-    <!-- Diagonal separator-->
+    <!-- Diagonal Separator -->
     <div class="remaining">
         <div class="skew_appended"></div>
     </div>
 
-    <!-- About Me Section -->
     <div class="push-large"></div>
-    <div class="container" id="about">
-        <div class="row">
-            <div class="col-lg-4">
-              <img src="images/background/profile.png" class="profile-picture"/>
-            </div>
-            <div class="col-lg-8">
-                 <h2 class="text-centered no-margin-top">About Me</h2>
-                 <p>I'm a part time poet and a mathematician.  I love to explore new paths, foster curiosity and learn new truths.  I hope to make a positive difference in this world, and to do so with my passions of writing, creating and understanding.  Some days, I hope to help clean up our energy sources, to help us become more and more energy efficient. Some days, I wish to write and reach an audience willing to listen and tangle with nuance.  Whether I'm working to fix homelesssness or climate change, I want to address today's issues with lasting, flexible fixes.  In my free time I play basketball, practice the ukulele, discover more poetry, more music, and explore the Bay Area.  As a lifelong goal, I strive to live with the optimism of the poet Whitman:<br><br><p class="text-centered"><i>Be not discouraged - keep on - there are divine things well envelop'd;<br>I swear to you there are divine things more beautiful than words can tell.</i></p>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="push-large"></div>
+    <div class="container" id="migration">
+      <h2 class="text-centered">Migration Analysis</h2>
+      <h3><a href="https://medium.com/lotadata/do-we-ever-leave-our-political-bubbles-951e097a7a51">Migratory Political Bubbles</a></h3>
 
-    <!-- Diagonal separator-->
+        <br>The 2016 U.S. Presidential Election left people on both sides of the political aisle very surprised. Many media outlets, pollsters and political predictors hadn’t seen it coming. Since then, several articles have investigated the relative shock of the election using the frameworks of social media bubbles, news bubbles and socio-economic/racial bubbles.
+
+        <br><br> Here, I will discuss a similar framework called migratory bubbles. As a Texan living in San Francisco, people often tell me they would move to Texas, “but only Austin!” They see a parallel liberal haven and would feel comfortable moving there. This desire to move somewhere politically similar is only anecdote, but I want to see whether it’s indicative of a wide-ranging phenomenon that we act upon when moving to a new city.
+
+        <br><br>To begin answering these questions, I obtained a few datasets: the most recent U.S. County-to-County migration outflows (2010-2014), and a Geo-Political County Level dataset including county shapefiles, county demographics and county vote information over the past 3 national Congressional and Presidential elections (2012, 2014, 2016). To visualize the data, I combined the datasets by county id, then mapped the results by Census-defined region. On the maps below, each arc connects a previous county of residence with a current county of residence. Larger county-to-county migration flows are represented by larger arcs.
+      </p>
+      <div class="push-small"></div>
+
+      <div class="row">
+        <div id="poem-img-container">
+          <div class="col-lg-6">
+            <img src="images/visualizations/migration_regional.png" class="poem-picture"/>
+          </div>
+        </div>
+        <div id="poem-img-container">
+          <div class="col-lg-6">
+            <img src="images/visualizations/migration_political.png" class="poem-picture"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="push-small"></div>
+      <i>Regional Bubbles</i> The resulting regional map on the left has one major takeaway: most migration is intra-regional. Only a few areas, like the aqua-marine of Southern Florida or the red-yellow split of Milwaukee, have a significant amount of inter-regional migration. In some sense, this is our first order bubble. When moving to new places, we stay close to previous homes. It’s often what makes the most sense from an economical and social perspective.
+
+      <br><br><i>Political Bubbles</i> Looking now at the map on the right, the most notable and colorful political features are (1) the broad swaths of red underlying matrices (2) the numerous blue cross-country arcs and (3) the glowing blue Eastern seaboard of Boston, New York City, and Washington D.C.
+
+      <br><br>At a glance, these arcs help reveal the growing urban vs. rural divide already noted in other analyses. The maps also lend credence to the existence of flyover states and coastal elites in county-to-county migration. While there is a significant amount of coast to coast movement, and interior to interior movement, the coast to interior movement (&amp vice versa) is limited.
+
+      <div class="push-small"></div>
+      <div class="row">
+        <div id="migration-img-container">
+          <img src="images/visualizations/migration_numbers.png" class="migration-picture"/>
+        </div>
+      </div>
+      <div class="push-small"></div>
+
+      Getting down into the data, we can start to see whether certain regions are better/worse than the national average at getting out of their bubbles. In the chart above, we find that 31% of U.S. migration occurred from R→R, and 32% occurred from D→D. This shows that nearly 2/3 of all migration occurred within political bubbles on each side of the political spectrum.
+
+      <br><br>More than 50% of all people from the West and Northeast migrated from a liberal county to another liberal county. About 40% of all people from the South and Midwest migrated from a conservative county to another conservative county. These are the two dominant versions and visions of the U.S: the Southern/Midwestern Republican base (flyover country) and the Western/Northeastern base (coastal elites). <i>It seems that when moving to new cities, we do in fact tend to stay within our own bubbles.</i>
+
+      <div class="push-large"></div>
+    </div>
+
+    <!-- Diagonal Separator -->
     <div class="remaining">
         <div class="skew_prepend"></div>
     </div>
 
-    <!-- Main section -->
-    <img class="background_image bg_portugal" id="top"/>
-
-    <!-- Diagonal separator-->
-    <div class="remaining">
-        <div class="skew_appended"></div>
-    </div>
-
-
-    <div class="push-large"></div>
-    <h2 class="text-centered no-margin-top">Projects</h2>
-    <div class="push-small"></div>
-    <div class="container" id="projects">
-      <!-- 1st Row -->
-      <a href="gentrification.html">
-        <div class="square">
-          <img class="square-image bg_san_francisco">
-          <div class="middle">
-            <div class="square-text">Gentrification</div>
-          </div>
-        </div>
-      </a>
-      <a href="tree_of_trees.html">
-        <div class="square">
-          <img class="square-image bg_redwood">
-          <div class="middle">
-            <div class="square-text">Tree of Trees</div>
-          </div>
-        </div>
-      </a>
-      <a href="migration.html">
-        <div class="square">
-          <img class="square-image bg_flag">
-          <div class="middle">
-            <div class="square-text">Migratory Bubbles</div>
-          </div>
-        </div>
-      </a>
-
-      <!-- 2nd Row -->
-      <a href="tsp.html">
-        <div class="square">
-          <img class="square-image bg_airplane">
-          <div class="middle">
-            <div class="square-text">Traveling Salesman</div>
-          </div>
-        </div>
-      </a>
-      <a href="nba.html">
-        <div class="square">
-          <img class="square-image bg_basketball">
-          <div class="middle">
-            <div class="square-text">NBA Playoffs</div>
-          </div>
-        </div>
-      </a>
-
-    </div>
     <div class="push-small"></div>
     <div class="push-large"></div>
-    <!-- Main section -->
-    <img class="background_image bg_book" id="top"/>
+    
 
-    <!-- Diagonal separator-->
-    <div class="remaining">
-        <div class="skew_appended"></div>
-    </div>
-    <div class="push-large"></div>
-   
-    <h2 class="text-centered no-margin-top">Books</h2>
-    <div class="push-small"></div>
-    <div class="container" id="books" style='text-align: center'>
-      <a href="in_a_word.html">
-        <img class="book bg_in_a_word">
-      </a>
-      <a href="revival.html">
-        <img class="book bg_revival">
-      </a>
-    </div>
-
-    <div class="push-large"></div>
     <!-- Diagonal Separator -->
     <div class="fifth-background" id="contact">
       <div class="push-small"></div>

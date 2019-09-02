@@ -56,7 +56,7 @@ $('.home.index').ready(function() {
       img_url_div = GetElementInsideContainer(container, img_url_container)
       console.log(img_url_div)
       default_text = $( "#drop_"+side+"e option:selected" ).text();
-      img_url = "images/" + default_text + ".png";
+      img_url = "images/basketball/" + default_text + ".png";
       console.log(img_url)
       $(img_container)[0].setAttribute('src', img_url);
     }
@@ -77,7 +77,7 @@ $('.home.index').ready(function() {
       img_url_div = GetElementInsideContainer(container, img_url_container)
       console.log(img_url_div)
       default_text = $( "#drop_"+side+"w option:selected" ).text();
-      img_url = "images/" + default_text + ".png";
+      img_url = "images/basketball/" + default_text + ".png";
       console.log(img_url)
       $(img_container)[0].setAttribute('src', img_url);
     }
@@ -89,7 +89,7 @@ $('.home.index').ready(function() {
     NProgress.start();
     var chosen_text = $(this).val();
     console.log(chosen_text)
-    var image_url = "images/" + chosen_text + ".png";
+    var image_url = "images/basketball/" + chosen_text + ".png";
     var img_container = "#zoom_img_r";
     if($(this)[0].id === "drop_le" || $(this)[0].id === "drop_lw") img_container = "#zoom_img_l";
 

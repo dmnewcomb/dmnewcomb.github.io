@@ -104,128 +104,84 @@
                   Coursework
                 </a>
               </li>
-
-              <li class="menu-tab-last">
-                <a href="#contact" class="active-a page-scroll">
-                  Contact
-                </a>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- Main section -->
-    <img class="top_background_image background_image bg_leaf" id="top"/>
 
-    <!-- Diagonal separator-->
+    <!-- Third Image -->
+    <img class="background_image bg_pacific"/>
+
+    <!-- Diagonal Separator -->
     <div class="remaining">
         <div class="skew_appended"></div>
     </div>
 
-    <!-- About Me Section -->
     <div class="push-large"></div>
-    <div class="container" id="about">
-        <div class="row">
-            <div class="col-lg-4">
-              <img src="images/background/profile.png" class="profile-picture"/>
-            </div>
-            <div class="col-lg-8">
-                 <h2 class="text-centered no-margin-top">About Me</h2>
-                 <p>I'm a part time poet and a mathematician.  I love to explore new paths, foster curiosity and learn new truths.  I hope to make a positive difference in this world, and to do so with my passions of writing, creating and understanding.  Some days, I hope to help clean up our energy sources, to help us become more and more energy efficient. Some days, I wish to write and reach an audience willing to listen and tangle with nuance.  Whether I'm working to fix homelesssness or climate change, I want to address today's issues with lasting, flexible fixes.  In my free time I play basketball, practice the ukulele, discover more poetry, more music, and explore the Bay Area.  As a lifelong goal, I strive to live with the optimism of the poet Whitman:<br><br><p class="text-centered"><i>Be not discouraged - keep on - there are divine things well envelop'd;<br>I swear to you there are divine things more beautiful than words can tell.</i></p>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="push-large"></div>
+    <div class="container" id="gentrification">
+      <h2 class="text-centered">Assimilation &amp Gentrification</h2>
+      <h3><a href="https://medium.com/lotadata/do-google-employees-assimilate-with-local-communities-d4be3578f7b8">San Francisco Residents</a></h3>
+      <p><br>The Silicon Valley world of top tech companies and startups often comes under fire for being too male, too white and too wealthy. For several years, the privileged group of tech workers in the Bay has continued to gentrify many San Francisco neighborhoods. Subsequently rising rents and new, high-end restaurants/shops have priced people out of the city and left many dispossessed. This is a pressing issue, and I want to use tech to help solve it. To begin the analysis, I focused on the interaction of tech and non-tech communities in various SF neighborhoods by the following method:
+        <br><p class="tab"><i>Data Collection &amp Classification</i>:  Using LotaData’s proprietary datasets, I gathered device-specific geolocation timestamps on ~100K devices. After clustering the data, I determined a likely work location and a likely home city for about 25% of the devices. From this sample, I compared two broad groups of San Francisco devices: tech-workers and non tech-workers. From the location trails of each device, I pinpointed a list of places visited (e.g. restaurants, airports, etc.) and events attended (e.g. concerts, basketball games, etc.). This list led to a classification of what types of places and what types of events a particular device tends to visit.
 
-    <!-- Diagonal separator-->
+        <br><br><i>Network Creation</i>:  With these vectorized classifications, I created a similarity scoring method and calculated the similarity score between all devices. From the scores, I created a series of k-NN (k-nearest neighbors) networks. In the network, two nodes (or devices) are connected by an edge. For every node, there is an edge between itself and the k most similar other nodes. Further, the length of each edge is inversely proportional to the similarity score. This means similar devices are grouped close together and dissimilar devices are farther apart.</p>
+
+      <div class="push-small"></div>
+
+      <div class="row">
+        <div id="graph-img-container">
+          <div class="col-lg-4">
+            <img src="images/visualizations/assimilation_sf.png" class="graph-picture"/>
+          </div>
+        </div>
+        <div id="graph-img-container">
+          <div class="col-lg-4">
+            <img src="images/visualizations/assimilation_mission.png" class="graph-picture"/>
+          </div>
+        </div>
+        <div id="graph-img-container">
+          <div class="col-lg-4">
+            <img src="images/visualizations/assimilation_google.png" class="graph-picture"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="push-small"></div>
+      As seen in the above left plot, if we set k = 1, we don’t have too many connections and we have a simple, low-dimensional graph. If k = 50, we’ll have a dense, high-dimensional graph. Another feature that jumps out is the presence of a few clearly defined cyan clusters. These clusters represent cliques that rarely extend past their own grouping.
+
+      <br><br>The middle plot of the Mission neighborhood in San Francisco highlights one of these main clusters. As one of the main spots of gentrification in the city, this cluster makes intuitive sense. There is a large influx of tech workers in that area, although there remains a strong Latino and minority presence in the neighborhood. In the fight to preserve the Latino character of the Mission, there seems to be a strong pocket that remains separate from the tech community.
+
+      <br><br>With this idea of assimilation in mind, I took the connectivity of the graph and calculated a weighted assimilation score between tech and non-tech groups. This value represents how much one community has behaviorally assimilated with the other. A high score means the 2 groups behave similarly, while a low score means there is a wide behavioral gap between groups. I applied the metric to 7 San Francisco neighborhoods and 3 top tech companies (Google, Apple &amp Facebook) to obtain the scale below.
+
+      <div class="push-small"></div>
+      <div class="row">
+        <div id="horizontal-img-container">
+          <img src="images/visualizations/assimilation_stats.png" class="horizontal-picture"/>
+        </div>
+      </div>
+      <div class="push-small"></div>
+
+      Amongst the 3 major companies, Google employees had the highest assimilation score, followed by Apple and Facebook. The differences between these companies could have something to do with the personalities of people hired at each of the companies. It could have something to do with age, gender, ethnicity or a whole host of other factors.
+
+      <br><br>Amongst neighborhoods, the Mission and the Marina had the lowest assimilation scores, but for very different reasons. As mentioned before, there is a broad gap in the Mission between the minority groups (e.g. Latino, Black and immigrant communities) and the new wave of tech workers. In the predominantly white and wealthy Marina community, this gap is more likely a difference between finance workers (i.e. non-tech for this analysis) and tech workers.
+
+      <br><br> This type of analysis absolutely requires more complete data and finer tuning. Moving forward, I believe a more rigorous and more comprehensive network analysis of workers in the Bay Area can help identify and address the needs of our communities. We can push specific companies and their employees to act in a more responsible and selfless manner. To help preserve and enrich the neighborhoods in San Francisco, we can implement actual solutions that mitigate the negative consequences of gentrification.
+
+
+      <div class="push-large"></div>
+    </div> <!-- End of Project IV section -->
+
+    <!-- Diagonal Separator -->
     <div class="remaining">
         <div class="skew_prepend"></div>
     </div>
 
-    <!-- Main section -->
-    <img class="background_image bg_portugal" id="top"/>
-
-    <!-- Diagonal separator-->
-    <div class="remaining">
-        <div class="skew_appended"></div>
-    </div>
-
-
-    <div class="push-large"></div>
-    <h2 class="text-centered no-margin-top">Projects</h2>
-    <div class="push-small"></div>
-    <div class="container" id="projects">
-      <!-- 1st Row -->
-      <a href="gentrification.html">
-        <div class="square">
-          <img class="square-image bg_san_francisco">
-          <div class="middle">
-            <div class="square-text">Gentrification</div>
-          </div>
-        </div>
-      </a>
-      <a href="tree_of_trees.html">
-        <div class="square">
-          <img class="square-image bg_redwood">
-          <div class="middle">
-            <div class="square-text">Tree of Trees</div>
-          </div>
-        </div>
-      </a>
-      <a href="migration.html">
-        <div class="square">
-          <img class="square-image bg_flag">
-          <div class="middle">
-            <div class="square-text">Migratory Bubbles</div>
-          </div>
-        </div>
-      </a>
-
-      <!-- 2nd Row -->
-      <a href="tsp.html">
-        <div class="square">
-          <img class="square-image bg_airplane">
-          <div class="middle">
-            <div class="square-text">Traveling Salesman</div>
-          </div>
-        </div>
-      </a>
-      <a href="nba.html">
-        <div class="square">
-          <img class="square-image bg_basketball">
-          <div class="middle">
-            <div class="square-text">NBA Playoffs</div>
-          </div>
-        </div>
-      </a>
-
-    </div>
     <div class="push-small"></div>
     <div class="push-large"></div>
-    <!-- Main section -->
-    <img class="background_image bg_book" id="top"/>
+    
 
-    <!-- Diagonal separator-->
-    <div class="remaining">
-        <div class="skew_appended"></div>
-    </div>
-    <div class="push-large"></div>
-   
-    <h2 class="text-centered no-margin-top">Books</h2>
-    <div class="push-small"></div>
-    <div class="container" id="books" style='text-align: center'>
-      <a href="in_a_word.html">
-        <img class="book bg_in_a_word">
-      </a>
-      <a href="revival.html">
-        <img class="book bg_revival">
-      </a>
-    </div>
-
-    <div class="push-large"></div>
     <!-- Diagonal Separator -->
     <div class="fifth-background" id="contact">
       <div class="push-small"></div>
@@ -289,3 +245,4 @@
   </body>
 
 </html>
+  

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+  <head>
+    <title>David Newcomb</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- Link to Open Sans-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Main CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- Animation CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- Fast Select -->
+    <link rel="stylesheet" href="css/select.css">
+    <!-- NProgress -->
+    <link rel="stylesheet" href="css/nprogress.css">
+  </head>
+
+  <body class="home index">
+    <!-- Header Section -->
+    <header class="headroom">
+      <nav class="navbar navbar-fixed-top top-nav-collapse" id="nav-bar-container">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="brand">DN</div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggle-target">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse animate" id="toggle-target">
+            <ul class="nav navbar-nav">
+              <li class="brand-spacer"></li>
+
+              <li class="menu-tab">
+                <a href="index.html">
+                  Home
+                </a>
+              </li>
+
+              <li class="menu-tab">
+                <a href="gentrification.html">
+                  Gentrification
+                </a>
+              </li>
+
+              <li class="menu-tab">
+                <a href="tree_of_trees.html">
+                  Tree of Trees
+                </a>
+              </li>
+
+              <li class="menu-tab">
+                <a href="migration.html">
+                  Migratory Bubbles
+                </a>
+              </li>
+
+              <li class="menu-tab">
+                <a href="tsp.html">
+                  Traveling Salesman
+                </a>
+              </li>
+
+              <li class="menu-tab">
+                <a href="nba.html">
+                  NBA Playoffs
+                </a>
+              </li>
+
+              <li class="menu-tab">
+                <a href="in_a_word.html">
+                  In A Word
+                </a>
+              </li>
+
+              <li class="menu-tab">
+                <a href="revival.html">
+                  Revival
+                </a>
+              </li>
+
+              <li class="menu-tab">
+                <a href="work.html">
+                  Work Experience
+                </a>
+              </li>
+
+              <li class="menu-tab">
+                <a href="coursework.html">
+                  Coursework
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main section -->
+    <img class="background_image bg_basketball_top"/>
+
+    <!-- Diagonal separator-->
+    <div class="remaining">
+        <div class="skew_appended"></div>
+    </div>
+
+    <!-- All Projects Section -->
+    <!-- Project I Section -->
+    <div class="push-large"></div>
+    <div class="container" id="NBA">
+      <h2 class="text-centered">NBA Paths to the Playoffs</h2>
+      <h3></h3>
+      <p>Beneath is my personal project work to create a visualization that charts the progression of an NBA team's season. Each graph charts the win-loss path of a team and uses the background to provide a comparison to past seasons as well as historical playoff probabilities.  The graphs below therefore represent a mixture of both historical and current NBA season data.  The major components are the background, the highlighted paths and the color gradients.</p>
+      <div class="push-small"></div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="team-img-container">
+            <div id="drop-container_lc">
+              <select id="drop_lc" data-live-search="true">
+                  <option selected value="Western Conference">Western Conference</option>
+                  <option value="Eastern Conference">Eastern Conference</option>
+              </select>
+            </div>
+            <div id="container_lc">
+              <div id="drop-container_le" style="display: none";>
+                  <select id="drop_le" data-live-search="true">
+                    <option value="Toronto Raptors">Toronto Raptors</option>
+                    <option value="Boston Celtics">Boston Celtics</option>
+                    <option value="Brooklyn Nets">Brooklyn Nets</option>
+                    <option value="Philadelphia 76ers">Philadelphia 76ers</option>
+                    <option value="New York Knicks">New York Knicks</option>
+
+                    <option selected value="Cleveland Cavaliers">Cleveland Cavaliers</option>
+                    <option value="Chicago Bulls">Chicago Bulls</option>
+                    <option value="Milwaukee Bucks">Milwaukee Bucks</option>
+                    <option value="Indiana Pacers">Indiana Pacers</option>
+                    <option value="Detroit Pistons">Detroit Pistons</option>
+
+                    <option value="Atlanta Hawks">Atlanta Hawks</option>
+                    <option value="Washington Wizards">Washington Wizards</option>
+                    <option value="Miami Heat">Miami Heat</option>
+                    <option value="Charlotte Hornets">Charlotte Hornets</option>
+                    <option value="Orlando Magic">Orlando Magic</option>
+                  </select>
+              </div>
+              <div id="drop-container_lw" style="display: block";>
+                  <select id="drop_lw" data-live-search="true">
+                    <option selected value="Dallas Mavericks">Dallas Mavericks</option>
+                    <option value="Houston Rockets">Houston Rockets</option>
+                    <option value="Memphis Grizzlies">Memphis Grizzlies</option>
+                    <option value="San Antonio Spurs">San Antonio Spurs</option>
+                    <option value="New Orleans Pelicans">New Orleans Pelicans</option>
+
+                    <option value="Portland Trail Blazers">Portland Trail Blazers</option>
+                    <option value="Oklahoma City Thunder">Oklahoma City Thunder</option>
+                    <option value="Utah Jazz">Utah Jazz</option>
+                    <option value="Denver Nuggets">Denver Nuggets</option>
+                    <option value="Minnesota Timberwolves">Minnesota Timberwolves</option>
+
+                    <option value="Golden State Warriors">Golden State Warriors</option>
+                    <option value="Los Angeles Clippers">Los Angeles Clippers</option>
+                    <option value="Los Angeles Lakers">Los Angeles Lakers</option>
+                    <option value="Phoenix Suns">Phoenix Suns</option>
+                    <option value="Sacramento Kings">Sacramento Kings</option>
+                  </select>
+              </div>
+              <img src="images/basketball/Dallas Mavericks.png" class="zoom" id="zoom_img_l"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="team-img-container">
+            <div id="drop-container_rc">
+              <select id="drop_rc" data-live-search="true">
+                  <option value="Western Conference">Western Conference</option>
+                  <option selected value="Eastern Conference">Eastern Conference</option>
+              </select>
+            </div>
+            <div id="container_rc">
+              <div id="drop-container_re" style="display: block";>
+                  <select id="drop_re" data-live-search="true">
+                    <option value="Toronto Raptors">Toronto Raptors</option>
+                    <option value="Boston Celtics">Boston Celtics</option>
+                    <option value="Brooklyn Nets">Brooklyn Nets</option>
+                    <option value="Philadelphia 76ers">Philadelphia 76ers</option>
+                    <option value="New York Knicks">New York Knicks</option>
+
+                    <option selected value="Cleveland Cavaliers">Cleveland Cavaliers</option>
+                    <option value="Chicago Bulls">Chicago Bulls</option>
+                    <option value="Milwaukee Bucks">Milwaukee Bucks</option>
+                    <option value="Indiana Pacers">Indiana Pacers</option>
+                    <option value="Detroit Pistons">Detroit Pistons</option>
+
+                    <option value="Atlanta Hawks">Atlanta Hawks</option>
+                    <option value="Washington Wizards">Washington Wizards</option>
+                    <option value="Miami Heat">Miami Heat</option>
+                    <option value="Charlotte Hornets">Charlotte Hornets</option>
+                    <option value="Orlando Magic">Orlando Magic</option>
+                  </select>
+              </div>
+              <div id="drop-container_rw" style="display: none";>
+                  <select id="drop_rw" data-live-search="true">
+                    <option selected value="Dallas Mavericks">Dallas Mavericks</option>
+                    <option value="Houston Rockets">Houston Rockets</option>
+                    <option value="Memphis Grizzlies">Memphis Grizzlies</option>
+                    <option value="San Antonio Spurs">San Antonio Spurs</option>
+                    <option value="New Orleans Pelicans">New Orleans Pelicans</option>
+
+                    <option value="Portland Trail Blazers">Portland Trail Blazers</option>
+                    <option value="Oklahoma City Thunder">Oklahoma City Thunder</option>
+                    <option value="Utah Jazz">Utah Jazz</option>
+                    <option value="Denver Nuggets">Denver Nuggets</option>
+                    <option value="Minnesota Timberwolves">Minnesota Timberwolves</option>
+
+                    <option value="Golden State Warriors">Golden State Warriors</option>
+                    <option value="Los Angeles Clippers">Los Angeles Clippers</option>
+                    <option value="Los Angeles Lakers">Los Angeles Lakers</option>
+                    <option value="Phoenix Suns">Phoenix Suns</option>
+                    <option value="Sacramento Kings">Sacramento Kings</option>
+                  </select>
+              </div>
+              <img src="images/basketball/Cleveland Cavaliers.png" class="zoom" id="zoom_img_r"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="push-small"></div>
+      <p class="tab"><i><b>Background:</i></b>  The underlying values of the backdrop come from a matrix of the historical probability that an NBA team made the playoffs, given that the team had y wins and x losses.  Each number inside each box indicates this exact probability.  The data were collected from basketball-reference.com for the 1978/79 season (the year of the NBA/ABA merger) through the 2016/17 season.<br><br><i><b>Paths:</i></b>  As a layer on top of these historical probabilities, there is a highlighted path which shows the current progress of a team moving through the 82 game season.  At a glance, teams that rise to the top left quadrant have true championship hopes, whereas teams stuck in the bottom right are simply waiting for the next LeBron.<br><br><i><b>Color Gradients:</i></b>  Every background color gradient comes from the corresponding team's colors.  The top left color represents a 100% historical probability of making the playoffs given the team's record, the middle color represents a 50% historical probability and the bottom right color represents a 0% historical probability.  Every path color gradient uses the same historical probabilities as its base values and uses the simple green = 100%, yellow = 50%, red = 0% spectrum, while shading the in-between values appropriately.
+    </div> <!-- End of Project I section -->
+    <div class="push-large"></div>
+
+    <!-- Diagonal Separator -->
+    <div class="remaining">
+        <div class="skew_prepend"></div>
+    </div>
+    <!-- Main section -->
+    <img class="background_image bg_basketball_bottom"/>
+
+    <!-- Diagonal Separator -->
+    <div class="fifth-background" id="contact">
+      <div class="push-small"></div>
+      <h2 class="text-centered">Contact Me</h2>
+      <a class="text-centered link-text-color contact-email" href="mailto:gdctmcontest@gmail.com">
+        dnewcomb@alumni.stanford.edu
+      </a>
+      <div class="push-small"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 col-md-2"></div>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/pub/david-newcomb/76/552/53b" class="col-lg-2 col-md-2 col-sm-6 logo-container">
+            <i class="fa fa-linkedin-square fa-3x logo" aria-hidden="true"></i>
+            <h4 class="text-centered secondary-text-color">LinkedIn</h4>
+          </a>
+
+          <!-- Resume -->
+          <a href="pdfs/David Newcomb Resume.pdf" class="col-lg-2 col-md-2 col-sm-6 logo-container">
+            <i class="fa fa-file-text-o fa-3x logo" aria-hidden="true"></i>
+            <h4 class="text-centered secondary-text-color">Resume</h4>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com/arbourtrary/" class="col-lg-2 col-md-2 col-sm-6 logo-container">
+            <i class="fa fa-instagram fa-3x logo" aria-hidden="true"></i>
+            <h4 class="text-centered secondary-text-color">Instagram</h4>
+          </a>
+
+          <!-- Book: In A Word -->
+          <a href="http://www.blurb.com/b/7521054-in-a-word" class="col-lg-2 col-md-2 col-sm-6 logo-container">
+            <i class="fa fa-book fa-3x logo" aria-hidden="true"></i>
+            <h4 class="text-centered secondary-text-color">In A Word</h4>
+          </a>
+
+          <!-- Book: Revival -->
+          <a href="http://www.blurb.com/b/8628253-revival" class="col-lg-2 col-md-2 col-sm-6 logo-container">
+            <i class="fa fa-book fa-3x logo" aria-hidden="true"></i>
+            <h4 class="text-centered secondary-text-color">Revival</h4>
+          </a>
+        </div>
+      </div>
+      <div class="push-small"></div>
+    </div>
+
+    <!-- Javascript Files -->
+    <!-- JQuery source -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Fast Select js file -->
+    <script type="text/javascript" src="js/select.js"></script>
+    <!-- NProgress js file -->
+    <script type="text/javascript" src="js/nprogress.js"></script>
+    <!-- Headroom js file -->
+    <script type="text/javascript" src="js/headroom.js"></script>
+    <!-- Zoom js file -->
+    <script type="text/javascript" src="js/zoom.js"></script>
+    <!-- Main js file -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+
+</html>
