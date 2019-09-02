@@ -130,24 +130,24 @@ body {
     }
 
     .top-nav-collapse #toggle-target .navbar-nav {
-        border-right: 1px solid #1baeff;
+        border-right: 1px solid #0274F9;
     }
 }
 
 .navbar-collapse {
-    border-top: #1baeff !important;
+    border-top: #0274F9 !important;
 }
 
 .brand, .brand-spacer {
     width: 60px;
     height: 60px;
     background-color: white;
-    color: #1baeff;
+    color: #0274F9;
     text-align: center;
     font-size:  2.5em;
     line-height: 60px;
     position: absolute;
-    border-bottom: 1px solid #1baeff;
+    border-bottom: 1px solid #0274F9;
 }
 
 .brand {
@@ -163,14 +163,14 @@ body {
 }
 
 #toggle-target .brand {
-    border-right: 1px solid #1baeff;
+    border-right: 1px solid #0274F9;
 }
 
 #toggle-target .navbar-nav {
     height: 60px;
     z-index: 100;
     width: 100%;
-    border-bottom: 1px solid #1baeff;
+    border-bottom: 1px solid #0274F9;
     background-color: #eee;
 }
 
@@ -203,11 +203,11 @@ body {
 }
 
 #toggle-target .menu-tab  {
-    color: #1baeff !important;
+    color: #0274F9 !important;
 }
 
 .menu-tab-last a:hover, .menu-tab a:hover {
-    color: #1baeff !important;
+    color: #0274F9 !important;
 }
 
 #toggle-target .return-top {
@@ -254,7 +254,7 @@ body {
     }
 
     .navbar {
-        border-bottom: 1px solid #1baeff !important;
+        border-bottom: 1px solid #0274F9 !important;
     }
 
     .navbar-nav {
@@ -297,7 +297,7 @@ body {
 }
 
 .line-separator {
-    background-color: #1baeff !important;
+    background-color: #0274F9 !important;
     width: 50%;
     max-width: 600px;
     height: 1px;
@@ -329,7 +329,7 @@ body {
 }
 
 .link-text-color {
-    color: #1baeff !important;
+    color: #0274F9 !important;
 }
 
 /*media all*/
@@ -357,7 +357,7 @@ body {
 }
 
 .class-container:hover {
-    border: 1px solid #1baeff !important;
+    border: 1px solid #0274F9 !important;
 	text-decoration: none;
 }
 
@@ -377,7 +377,7 @@ body {
 }
 
 .logo-container:hover {
-    color: #1baeff;
+    color: #0274F9;
     font-size: 14px;
 }
 
@@ -441,7 +441,7 @@ a {
 }
 
 .team-img-container {
-    color: #1baeff;
+    color: #0274F9;
     background-color: white;
     padding: 15px;
 }
@@ -500,7 +500,7 @@ a {
 }
 
 .square-text {
-  background-color: #1baeff;
+  background-color: #0274F9;
   color: white;
   font-size: 16px;
   padding: 16px 48px;
