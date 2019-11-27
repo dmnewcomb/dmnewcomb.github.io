@@ -1,6 +1,6 @@
 body {
     background-color: #e0e0e0 !important;
-    font-size: 12px;
+    font-size: 13px;
     font-family: Open Sans !important;
 }
 
@@ -40,7 +40,7 @@ body {
 
 
 .poem-picture {
-    width: 550px;
+    width: 450px;
     height: auto;
     max-width: 100%;
     display: block;
@@ -318,6 +318,10 @@ body {
 
 .push-small {
     padding: 15px 0px;
+}
+
+.push-very-small {
+    padding: 5px 0px;
 }
 
 .text-centered {
