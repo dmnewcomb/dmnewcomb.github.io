@@ -23,11 +23,14 @@ $('.home.index').ready(function() {
   });
 
   $('#drop_lc').fastselect();
-  $('#drop_rc').fastselect();
   $('#drop_le').fastselect();
   $('#drop_lw').fastselect();
+  $('#drop_ly').fastselect();
+
+  $('#drop_rc').fastselect();
   $('#drop_re').fastselect();
   $('#drop_rw').fastselect();
+  $('#drop_ry').fastselect();
 
 
   $("#drop_lc, #drop_rc").on("change", function(e) {
@@ -35,7 +38,6 @@ $('.home.index').ready(function() {
     var chosen_text = $(this).val();
     var side = "l"
     if ($(this)[0].id === "drop_rc") side = "r"
-    console.log(side)
     var container = "";
     var img_container = "#zoom_img_"+side;
 
@@ -48,16 +50,14 @@ $('.home.index').ready(function() {
 
       container = "drop-container_"+side+"e";
       var show = document.getElementById(container);
-      console.log(show)
       if (show.style.display === 'none') {
           show.style.display = 'block';
       }
       img_url_container = "drop_"+side+"e";
       img_url_div = GetElementInsideContainer(container, img_url_container)
-      console.log(img_url_div)
       default_text = $( "#drop_"+side+"e option:selected" ).text();
-      img_url = "images/basketball/" + default_text + ".png";
-      console.log(img_url)
+      default_year = $( "#drop_"+side+"y option:selected" ).text();
+      img_url = "images/basketball/" + default_year + "/" + default_text + ".png";
       $(img_container)[0].setAttribute('src', img_url);
     }
 
@@ -75,23 +75,26 @@ $('.home.index').ready(function() {
       }
       img_url_container = "drop_"+side+"w";
       img_url_div = GetElementInsideContainer(container, img_url_container)
-      console.log(img_url_div)
       default_text = $( "#drop_"+side+"w option:selected" ).text();
-      img_url = "images/basketball/" + default_text + ".png";
-      console.log(img_url)
+      default_year = $( "#drop_"+side+"y option:selected" ).text();
+      img_url = "images/basketball/" + default_year + "/" + default_text + ".png";
       $(img_container)[0].setAttribute('src', img_url);
     }
   });
 
   // function that replaces the image with the correct one
   // for the NBA project
-  $("#drop_le, #drop_lw, #drop_re, #drop_rw").on("change", function(e) {
+  $("#drop_le, #drop_lw, #drop_re, #drop_rw, #drop_ly, #drop_ry").on("change", function(e) {
     NProgress.start();
-    var chosen_text = $(this).val();
-    console.log(chosen_text)
-    var image_url = "images/basketball/" + chosen_text + ".png";
+    var side = "l"
+    if ($(this)[0].id === "drop_re" || $(this)[0].id === "drop_rw" || $(this)[0].id === "drop_ry") side = "r"
+    var chosen_year = $( "#drop_"+side+"y option:selected" ).text();
+    var chosen_image = $("#drop_"+side+"e option:selected" ).text();
+    var conference = $( "#drop_"+side+"c option:selected" ).text();
+    if (conference === "Western Conference" && ($(this)[0].id === "drop_rw" || $(this)[0].id === "drop_lw" || $(this)[0].id === "drop_ly" || $(this)[0].id === "drop_ry")) chosen_image = $("#drop_"+side+"w option:selected" ).text();
+    var image_url = "images/basketball/" + chosen_year + "/" + chosen_image + ".png";
     var img_container = "#zoom_img_r";
-    if($(this)[0].id === "drop_le" || $(this)[0].id === "drop_lw") img_container = "#zoom_img_l";
+    if($(this)[0].id === "drop_le" || $(this)[0].id === "drop_lw" || $(this)[0].id === "drop_ly") img_container = "#zoom_img_l";
 
     // change the image to the correct one
     $(img_container)[0].setAttribute('src', image_url);
@@ -105,7 +108,6 @@ $('.home.index').ready(function() {
   function GetElementInsideContainer(containerID, childID) {
     var elm = {};
     var elms = document.getElementById(containerID).getElementsByTagName("*");
-    console.log(elms)
     for (var i = 0; i < elms.length; i++) {
         if (elms[i].id === childID) {
             elm = elms[i];
