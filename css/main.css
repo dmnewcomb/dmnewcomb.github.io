@@ -38,6 +38,14 @@ body {
     padding: 15px;
 }
 
+.revival-map-picture {
+    width: 350px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+    border: 10px solid $secondary-background-color;
+}
 
 .poem-picture {
     width: 450px;
@@ -52,6 +60,15 @@ body {
     color: $highlight-color-non-important;
     background-color: white;
     padding: 15px;
+}
+
+.spanning-tree-picture {
+    width: 250px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 5px auto;
+    border: 10px solid $secondary-background-color;
 }
 
 .graph-picture {
