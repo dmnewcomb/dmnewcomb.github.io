@@ -1,5 +1,5 @@
 body {
-    background-color: #e0e0e0 !important;
+    background-color: #f8f8f8 !important;
     font-size: 13px;
     font-family: Open Sans !important;
 }
@@ -234,7 +234,7 @@ body {
 
 @media(max-width: 1200px) {
     .navbar-header {
-        background-color: #e0e0e0 !important;
+        background-color: #f8f8f8 !important;
     }
 
     .brand {
@@ -355,7 +355,7 @@ body {
 
 /*media all*/
 .skew_appended, .skew_prepend {
-    background-color: #e0e0e0 !important;
+    background-color: #f8f8f8 !important;
     height: 100px;
     bottom: -51px;
     width: 100%;
