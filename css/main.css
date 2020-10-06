@@ -234,7 +234,7 @@ body {
 
 @media(max-width: 1200px) {
     .navbar-header {
-        background-color: #f8f8f8 !important;
+        background-color: #ffffff !important;
     }
 
     .brand {
@@ -355,7 +355,7 @@ body {
 
 /*media all*/
 .skew_appended, .skew_prepend {
-    background-color: #f8f8f8 !important;
+    background-color: #ffffff !important;
     height: 100px;
     bottom: -51px;
     width: 100%;
